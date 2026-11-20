@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>人生越難，就去越南</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@400;500&display=swap">
+<style>
+:root{--bg:#efe6d2;--card:#f8f2e4;--ink:#3a3128;--mute:#6f6354;--line:#d6c8a8;--accent:#3b6660;--rose:#b5473a;--on:#f8f2e4;--gold:#d9a84e;--do:.65;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#211c16;--card:#2a241c;--ink:#ece3d0;--mute:#a69a86;--line:#3d3528;--accent:#8fc2b6;--rose:#e0877a;--on:#211c16;--gold:#c79a45;--do:.35;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#211c16;--card:#2a241c;--ink:#ece3d0;--mute:#a69a86;--line:#3d3528;--accent:#8fc2b6;--rose:#e0877a;--on:#211c16;--gold:#c79a45;--do:.35;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 56px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.8 "Noto Sans TC",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+h1,h2,h3{font-family:"Noto Serif TC",Georgia,serif;font-weight:600;margin:0}
+.wrap{max-width:760px;margin:0 auto;padding:0 26px;position:relative;z-index:1}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none;height:48px;align-items:center}
+nav a{color:var(--mute);text-decoration:none;white-space:nowrap;font-size:14px}
+nav a:hover,nav a:focus-visible{color:var(--accent);outline:none}
+header{padding:64px 0 40px}
+header p.d{color:var(--rose);letter-spacing:.2em;margin:0 0 14px;font-size:13px}
+h1{font-size:clamp(34px,8vw,52px);line-height:1.25;letter-spacing:.06em}
+header p.s{color:var(--mute);margin:18px 0 0;max-width:30em}
+.wave{display:block;width:100%;height:28px;margin-top:28px;color:var(--accent)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0;border:1px solid var(--line);background:var(--card);margin-top:8px}
+.facts div{padding:14px 18px;border-bottom:1px solid var(--line)}
+.facts b{display:block;font:600 13px "Noto Serif TC",serif;color:var(--accent);margin-bottom:2px}
+.facts span{font-size:14px}
+section{padding:56px 0 8px}
+h2{font-size:26px;letter-spacing:.08em;margin-bottom:6px}
+h2+p{color:var(--mute);margin:0 0 22px;font-size:14px}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.tabs button{flex:0 0 auto;font:inherit;background:none;color:var(--mute);border:1px solid var(--line);padding:8px 14px;border-radius:2px;cursor:pointer;text-align:left;line-height:1.4}
+.tabs button small{display:block;font-size:12px}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--on);border-color:var(--accent)}
+.tabs button:focus-visible,.copy:focus-visible,input:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+.day h3{font-size:21px;margin:28px 0 4px}
+.day .note{color:var(--mute);font-size:14px;margin:0 0 14px}
+.tl{list-style:none;margin:0;padding:0 0 0 18px;border-left:1px solid var(--line)}
+.tl li{position:relative;padding:8px 0 8px 18px;display:grid;grid-template-columns:62px 1fr 44px;gap:8px}
+.tl li::before{content:"";position:absolute;left:-23px;top:17px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:1.5px solid var(--accent)}
+.tl time{font:600 14px "Noto Serif TC",serif;color:var(--accent)}
+.tl em{display:block;font-style:normal;font-size:12.5px;color:var(--mute)}
+.tw{overflow-x:auto;border:1px solid var(--line);background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:14px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 13px "Noto Serif TC",serif;color:var(--accent)}
+tr:last-child td{border-bottom:0}
+td.n{white-space:nowrap}
+.total td{font-weight:500;color:var(--rose)}
+.cap{font-size:13px;color:var(--mute);margin-top:10px}
+.chk{list-style:none;padding:0;margin:0;border:1px solid var(--line);background:var(--card)}
+.chk li{border-bottom:1px solid var(--line)}
+.chk li:last-child{border-bottom:0}
+.chk label{display:flex;gap:12px;padding:11px 14px;cursor:pointer;align-items:flex-start}
+.chk input{accent-color:var(--accent);width:18px;height:18px;margin-top:4px;flex:0 0 auto}
+.chk input:checked+span{color:var(--mute);text-decoration:line-through}
+.chk small{display:block;color:var(--mute);font-size:12.5px;text-decoration:none}
+.prog{font-size:13px;color:var(--rose);margin-bottom:8px}
+.addr{list-style:none;padding:0;margin:0;border:1px solid var(--line);background:var(--card)}
+.addr li{display:flex;gap:12px;justify-content:space-between;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line)}
+.addr li:last-child{border-bottom:0}
+.addr b{font-weight:500}
+.addr span{display:block;color:var(--mute);font-size:13.5px}
+.copy{flex:0 0 auto;font:inherit;font-size:13px;background:none;border:1px solid var(--accent);color:var(--accent);padding:4px 12px;border-radius:2px;cursor:pointer}
+.tips{padding:0;margin:0;list-style:none}
+.tips li{padding:10px 0 10px 18px;border-bottom:1px solid var(--line);position:relative}
+.tips li::before{content:"";position:absolute;left:0;top:21px;width:6px;height:6px;border-radius:50%;background:var(--rose)}
+.tips b{font:600 14px "Noto Serif TC",serif;color:var(--accent);margin-right:8px}
+footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--mute);font-size:13px;text-align:center}
+html{background:var(--bg)}body{position:relative}h1{text-wrap:balance}
+.deco{position:absolute;top:0;bottom:0;width:clamp(52px,12vw,140px);pointer-events:none;background-repeat:repeat-y;background-size:120px auto;opacity:var(--do);z-index:0}
+.deco.l{left:0;background-position:left top}.deco.r{right:0;background-position:right 0 top 320px}
+.ic{width:40px;height:40px;fill:none;stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;justify-self:end}.ic .g{fill:var(--gold);fill-opacity:.5}
+.mp{margin-left:8px;color:var(--accent);font-size:12.5px;border-bottom:1px solid var(--accent);text-decoration:none}.mp:first-child{margin-left:0}
+.facts a{color:var(--accent)}.big{font:600 30px "Noto Serif TC",serif;color:var(--rose);margin:0 6px}
+</style>
+</head>
+<body>
+<i class="deco l"></i><i class="deco r"></i>
+<nav><div class="wrap"><a href="#wx">天氣</a><a href="#plan">每日行程</a><a href="#car">交通</a><a href="#cost">預算</a><a href="#book">預約</a><a href="#ask">待確認</a><a href="#addr">地址</a><a href="#tips">小提醒</a><a href="#pack">打包</a></div></nav>
+<div class="wrap">
+<header>
+<p class="d">2027.04.10 – 04.15</p>
+<h1>人生越難，就去越南</h1>
+<p class="s">峴港家族旅遊，六天五夜，六位大人。前四晚住海邊，最後一晚住會安。一天大行程、一天輕鬆，慢慢走。</p>
+<svg class="wave" viewBox="0 0 400 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q 25 2 50 14 T 100 14 T 150 14 T 200 14 T 250 14 T 300 14 T 350 14 T 400 14" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+</header>
+<div class="facts">
+<div><b>去程</b><span>4/10（六）華航 07:10 桃園 → 09:00 峴港</span></div>
+<div><b>回程</b><span>4/15（四）星宇 18:45 峴港 → 22:35 桃園</span></div>
+<div><b>住宿 4/10–4/14</b><span>Canvas Danang Beach，三人海景房 × 2，約 NT$27,500</span></div>
+<div><b>住宿 4/14–4/15</b><span>Sứ Retreat Hoi An，三臥室住宅（含早餐），NT$11,110</span></div>
+<div><b>住宿合計</b><span>約 NT$38,610，每人約 NT$6,435</span></div>
+<div><b>飲食</b><span>6 位大人，其中 2 位吃方便素</span></div>
+</div>
+
+<section id="wx"><h2>出發倒數與天氣</h2><p>4 月是峴港的旱季，晴朗、炎熱、偏潮濕。以下是歷年平均的概況，出發前一週再看即時預報。</p><div class="facts"><div><b>出發倒數</b><span id="cd"></span></div><div><b>氣溫</b><span>白天約 29–31°C，夜晚約 23°C</span></div><div><b>降雨</b><span>雨量少，偶有短暫陣雨</span></div><div><b>體感</b><span>紫外線強、悶熱，記得多補水</span></div><div><b>即時預報</b><span><a href="https://www.google.com/search?q=%E5%B3%B4%E6%B8%AF+%E5%A4%A9%E6%B0%A3" target="_blank" rel="noopener">查看峴港天氣</a></span></div></div></section>
+<section id="plan">
+<h2>每日行程</h2>
+<p>D2 順化、D4 巴拿山比較累，D3、D5 安排得比較輕鬆。</p>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div class="day" id="day" role="tabpanel"></div>
+</section>
+
+<section id="car">
+<h2>交通安排</h2>
+<p>全程包車（16 人座，放得下 6 人和行李），每天同一位司機最省心。</p>
+<div class="tw"><table><thead><tr><th>日期</th><th>包車時段</th><th>路線</th></tr></thead><tbody id="cars"></tbody></table></div>
+</section>
+
+<section id="cost">
+<h2>預算估算</h2>
+<p>不含機票和住宿。匯率以 10,000 越盾 ≈ NT$13 計算。</p>
+<div class="tw"><table><thead><tr><th>項目</th><th>6 人合計（NT$）</th><th>估算依據</th></tr></thead><tbody id="budget"></tbody></table></div>
+<p class="cap">包車和拖曳傘的價格差異最大，實際費用請以業者報價為準。2027 年的票價也可能調整。</p>
+</section>
+
+<section id="book">
+<h2>預約清單</h2>
+<p>共 14 項要預約，全部是 6 人。訂好就勾起來，進度會記在這支手機或電腦上。</p>
+<div class="prog" id="p1"></div>
+<ul class="chk" id="booklist"></ul>
+</section>
+
+<section id="ask">
+<h2>待討論與待確認</h2>
+<p>還沒定案或需要先問清楚的事。</p>
+<div class="prog" id="p2"></div>
+<ul class="chk" id="asklist"></ul>
+</section>
+
+<section id="addr">
+<h2>越南文地址</h2>
+<p>叫車時直接把地址貼給司機或 Grab，最不容易出錯。</p>
+<ul class="addr" id="addrlist"></ul>
+</section>
+
+<section id="tips">
+<h2>行前小記錄</h2>
+<p></p>
+<ul class="tips" id="tiplist"></ul>
+</section>
+<section id="pack"><h2>打包清單</h2><p>打包好就勾起來，進度會記在這支裝置上。</p><div class="prog" id="p3"></div><ul class="chk" id="packlist"></ul></section>
+<footer>峴港家族旅遊行程（初版）· 2026.11.13</footer>
+</div>
+
+<script>
+var days=[
+{k:"D1",d:"4/10 六",t:"抵達＋市區",n:"",r:[["09:00","抵達峴港，入境、領行李",""],["10:00","機場 → Canvas 寄放行李","包車"],["10:45","粉紅教堂","包車"],["11:15","韓市場","走路 3 分鐘"],["12:30","午餐：Madame Lân","包車"],["14:00","Canvas 入住、休息","包車"],["15:30","Nguồn Spa 按摩","包車"],["18:00","晚餐：Bếp Cuốn，飯後海灘散步、早點休息","包車"]]},
+{k:"D2",d:"4/11 日",t:"順化一日遊",n:"今天最長，早起出發。",r:[["06:30","出發，車上吃外帶早餐（去程走海雲隧道）","包車"],["08:30","順化皇城（搭園區電動車）","包車"],["10:45","天姥寺","包車"],["12:00","午餐：順化牛肉粉，咖啡廳休息","包車"],["13:30","啟定皇陵（127 階）","包車"],["14:30","回程走海雲嶺山路，16:00 山頂拍照","包車"],["18:00","回到峴港，晚餐後休息","包車"]]},
+{k:"D3",d:"4/12 一",t:"輕鬆日",n:"",r:[["05:15","（早起無聊的人自在參加）美溪海灘、東海公園看日出","走路"],["09:00","飯店早餐，上午泳池或海灘放空",""],["13:00","Bánh mì Cô Tiên 買法國麵包，在車上吃","包車"],["13:30","山茶半島靈應寺（觀音像，2 小時）","包車"],["16:00","美溪海灘拖曳傘，租躺椅、鋪野餐墊","包車"],["18:30","晚餐：Shamballa（全素）","包車"],["20:00","Trees Spa 按摩，結束後回 Canvas","包車"]]},
+{k:"D4",d:"4/13 二",t:"巴拿山",n:"",r:[["06:45","飯店早餐",""],["07:00","出發到山腳纜車站（約 1 小時）","包車"],["08:00","搭第一班纜車 → 黃金佛手橋、愛之花園","纜車（司機在山腳等）"],["09:45","法國村、月亮城堡","登山小火車"],["10:30","四季餐廳自助午餐",""],["12:00","過山車（自由參加）、法國村散步",""],["14:00","下山，回 Canvas（拖曳傘的備案時段）","包車"],["18:30","晚餐：Thìa Gỗ（南越河粉、煎餅）","包車"]]},
+{k:"D5",d:"4/14 三",t:"會安",n:"今晚換住 Sứ Retreat。",r:[["09:00","飯店早餐",""],["10:30","Canvas 退房 → Sứ Retreat 寄放行李","包車"],["11:30","椰子林竹籃船（約 1 小時）","包車"],["12:45","午餐","包車"],["14:00","會安古城散步、買伴手禮；16:00 咖啡廳休息","包車"],["17:15","晚餐：Morning Glory Signature","走路"],["18:30","搭船放水燈",""],["19:00","回 Sứ Retreat 入住，享受 Villa 設施","包車"]]},
+{k:"D6",d:"4/15 四",t:"回程",n:"",r:[["上午","早餐、泳池、整理行李",""],["11:15","午餐：飯店餐廳",""],["12:00","退房 → 五行山（司機在停車場等候）","包車"],["15:00","前往峴港機場，15:30 辦理登機","包車"],["18:45","星宇起飛，22:35 抵達桃園",""]]}
+];
+var cars=[["D1 4/10","10:00–19:30","機場 → Canvas → 市區 → Spa → 晚餐"],["D2 4/11","06:30–18:00","順化一日遊（去程隧道、回程海雲嶺）"],["D3 4/12","13:00–21:30","靈應寺 → 拖曳傘 → 晚餐 → Spa"],["D4 4/13","07:00–20:00","巴拿山（山腳等候）→ 晚餐"],["D5 4/14","10:30–19:00","Canvas → Sứ Retreat → 椰子林 → 古城"],["D6 4/15","12:00–15:30","Sứ Retreat → 五行山（等候）→ 機場"]];
+var budget=[["包車 6 天","18,900–26,700","16 人座每天約 150–450 萬越盾，順化那天最貴；通常含油資、過路費、停車費"],["門票與活動","17,800–23,700","巴拿山纜車＋午餐每人 100 萬越盾；順化皇城 20 萬；會安古城 12 萬；五行山約 9 萬；另含皇陵、竹籃船、放水燈、躺椅，拖曳傘以 4 人計"],["Spa 兩次","7,800–11,700","Nguồn Spa 每人約 27 美元起、Trees Spa 每人約 30–40 萬越盾"],["餐飲","24,700–35,100","正餐 9 頓（巴拿山午餐已含在門票），每人每餐約 25–40 萬越盾，另含咖啡、飲料、點心"],["其他","5,000–6,000","司機小費、網卡、桃園回家接機"],["合計","約 74,000–103,000","每人約 12,300–17,200（不含購物）"]];
+var book=[["4/10","全程包車 6 天（16 人座，同一家業者；10:00 機場接機）","接送業者"],["4/10","Madame Lân 午餐 12:30","0905 697 555"],["4/10","Nguồn Spa 15:30","Klook"],["4/10","Bếp Cuốn 晚餐 18:00","KakaoTalk：Bepcuondanang"],["4/11","順化包車 06:30–18:00","包車業者"],["4/11","Canvas 外帶早餐 × 6","入住時跟櫃台說"],["4/12","Shamballa 晚餐 18:30","0775 648 668"],["4/12","Trees Spa 20:00（確認 90 分鐘療程能不能做）","Klook 或 Fresha"],["4/13","巴拿山纜車＋午餐套票","booking.sunworld.vn"],["4/13","Thìa Gỗ 晚餐 18:30","+84 236 3689 005"],["4/14","Canvas → Sứ Retreat 接送 10:30","包車業者"],["4/14","Morning Glory 晚餐 17:15（詢問素食菜單）","官網或電話"],["4/15","五行山＋機場包車 12:00（含等候）","包車業者"],["4/15","桃園回家接機 22:35","台灣接送業者"]];
+var ask=[["Canvas","4/11 能不能準備 6 份外帶早餐，要不要另外付費"],["Canvas","兩間房能不能安排相通房或同一層"],["Sứ Retreat","4/14 11:15 先寄放行李，19:00 回來辦入住"],["Thìa Gỗ","米其林網站的營業時間資料不一致，確認 4/13 週二晚上有開"],["Morning Glory","確認 17:15 有開、有沒有素食菜單"]];
+var addr=[["山茶半島靈應寺（D3）","Chùa Linh Ứng Bãi Bụt, Hoàng Sa, Thọ Quang, Sơn Trà, Đà Nẵng"],["Bánh mì Cô Tiên 法國麵包（D3）","Kiệt 80/10 Trần Phú, Hải Châu, Đà Nẵng"],["Nguồn Spa（D1）","81 Hoàng Kế Viêm, Mỹ An, Ngũ Hành Sơn, Đà Nẵng"],["Trees Spa（D3）","301 Dương Đình Nghệ, An Hải Bắc, Đà Nẵng"],["Shamballa（D3）","277 Trần Hưng Đạo, An Hải Bắc, Đà Nẵng"],["Thìa Gỗ（D4）","53 Phan Thúc Duyện, Mỹ An, Ngũ Hành Sơn, Đà Nẵng"],["Madame Lân（D1）","4 Bạch Đằng, Hải Châu, Đà Nẵng"],["五行山（D6）","81 Huyền Trân Công Chúa, Hòa Hải, Ngũ Hành Sơn, Đà Nẵng"]];
+var tips=[["服裝","寺廟、皇陵要遮住肩膀和膝蓋；巴拿山山頂比較涼，帶薄外套；五行山穿止滑的鞋"],["現金","五行山、會安古城、放水燈船、海灘躺椅都要付越盾現金"],["素食","點餐時說 chay（素）；不要魚露說 không nước mắm"],["Grab","六個人叫 GrabCar 7 人座，叫不到就分兩台"],["靈應寺","園區有獼猴，不要餵，包包和食物收好"],["防曬","皇城、古城、海灘幾乎沒有遮蔭，帽子、陽傘、水都要帶"]];
+
+function $(i){return document.getElementById(i)}
+var I={
+plane:"<path d='M6 30 42 14l-2-4-14 8-12-6-3 2 9 8-9 4z' class='g'/><path d='M10 40h28'/>",
+car:"<rect x='5' y='20' width='38' height='14' rx='4'/><path d='M11 20l4-9h18l5 9'/><circle cx='15' cy='36' r='4' class='g'/><circle cx='34' cy='36' r='4' class='g'/>",
+church:"<path d='M9 41V21l15-12 15 12v20z'/><path d='M24 9V3M21 5h6M20 41V30h8v11'/><circle cx='24' cy='22' r='3' class='g'/>",
+market:"<path d='M24 8 4 34h40z' class='g'/><path d='M13 34c5 5 17 5 22 0M24 8V5'/>",
+food:"<path d='M7 22h34c0 10-7 17-17 17S7 32 7 22z' class='g'/><path d='M15 15 33 5M20 17 38 7'/>",
+bread:"<path d='M5 31c0-9 8-15 19-15s19 6 19 15c0 4-4 6-8 6H13c-4 0-8-2-8-6z' class='g'/><path d='M15 25l4 4M25 22l4 4M33 26l3 3'/>",
+hotel:"<path d='M5 38V14M5 29h38v9M43 29v-6a6 6 0 0 0-6-6H19v12'/><circle cx='12' cy='22' r='3' class='g'/>",
+spa:"<path d='M24 36C14 33 11 23 15 15c5 4 9 10 9 21zM24 36c10-3 13-13 9-21-5 4-9 10-9 21z'/><path d='M24 36c-5-8-5-18 0-28 5 10 5 20 0 28z' class='g'/><path d='M9 41h30'/>",
+beach:"<circle cx='31' cy='15' r='6' class='g'/><path d='M4 29q5-5 10 0t10 0 10 0 10 0M4 38q5-5 10 0t10 0 10 0 10 0'/>",
+sun:"<path d='M13 33a11 11 0 0 1 22 0z' class='g'/><path d='M5 33h38M24 10v6M10 18l4 4M38 18l-4 4M9 40h30'/>",
+pagoda:"<path d='M24 3v6M13 18h22l-4-9H17zM15 29h18l-3-11H18zM10 40h28l-4-11H14z'/><path d='M12 40v5M36 40v5'/>",
+citadel:"<path d='M5 40V23h38v17M3 23 24 9l21 14M17 40V31a7 7 0 0 1 14 0v9'/><path d='M24 9V3h6v4h-6' class='g'/>",
+tomb:"<path d='M5 41h38M9 41v-6h8v-6h8v-6h8v-6h6'/><path d='M33 11h8v6' class='g'/>",
+mountain:"<path d='M3 39 17 14l9 14 6-9 13 20z' class='g'/><path d='M3 39h42M17 14l4 7'/>",
+cable:"<path d='M3 9 45 17M24 13v8'/><rect x='13' y='21' width='22' height='15' rx='3' class='g'/><path d='M13 28h22M20 21v7M28 21v7'/>",
+castle:"<path d='M7 41V19l6-5 6 5v22M27 41V15l7-7 7 7v26M3 41h42M34 8V3'/><circle cx='34' cy='24' r='3' class='g'/>",
+coaster:"<path d='M4 38C12 6 22 6 26 28s11 9 18-14M4 38h40M10 38V28M26 38V30M38 38V26'/>",
+boat:"<path d='M5 24h38c0 11-8 17-19 17S5 35 5 24z' class='g'/><path d='M2 43q5-4 10 0t10 0 10 0 10 0M24 24V10'/>",
+lantern:"<path d='M24 3v6M16 11h16'/><path d='M14 14c-4 9-2 18 4 23h12c6-5 8-14 4-23z' class='g'/><path d='M20 37v6M28 37v6M24 14v23'/>",
+coffee:"<path d='M9 20h23v9a11 11 0 0 1-23 0z' class='g'/><path d='M32 22h4a5 5 0 0 1 0 10h-4M15 8c0 4 4 4 0 9M24 8c0 4 4 4 0 9'/>",
+kite:"<path d='M5 21a19 13 0 0 1 38 0z' class='g'/><path d='M5 21l17 16M43 21 26 37M24 21v16'/><circle cx='24' cy='41' r='3'/>",
+pool:"<path d='M15 31V10a4 4 0 0 1 8 0M27 31V10a4 4 0 0 1 8 0M15 19h12'/><path d='M4 37q5-5 10 0t10 0 10 0 10 0' class='g'/>",
+leaf:"<path d='M10 38C10 18 24 8 40 8c0 18-10 30-30 30z' class='g'/><path d='M10 38 30 18'/>"};
+var K=[[/Spa|按摩/,"spa"],[/抵達峴港|機場|起飛/,"plane"],[/教堂/,"church"],[/麵包/,"bread"],[/古城|放水燈/,"lantern"],[/韓市場|伴手禮/,"market"],[/午餐|晚餐|自助|牛肉粉/,"food"],[/早餐|咖啡/,"coffee"],[/日出/,"sun"],[/拖曳傘/,"kite"],[/海灘|美溪/,"beach"],[/靈應寺|天姥寺/,"pagoda"],[/皇城/,"citadel"],[/皇陵/,"tomb"],[/海雲嶺|五行山/,"mountain"],[/纜車|佛手橋/,"cable"],[/過山車/,"coaster"],[/法國村|城堡|小火車/,"castle"],[/竹籃船|椰子林/,"boat"],[/泳池/,"pool"],[/入住|退房|寄放|Villa/,"hotel"],[/出發|包車|前往|接送|下山|回/,"car"]];
+var M=[[/粉紅教堂/,"Da Nang Cathedral"],[/韓市場/,"Han Market Da Nang"],[/Madame Lân/,"4 Bạch Đằng, Hải Châu, Đà Nẵng"],[/Nguồn Spa/,"81 Hoàng Kế Viêm, Ngũ Hành Sơn, Đà Nẵng"],[/Bếp Cuốn/,"Bếp Cuốn Đà Nẵng"],[/順化皇城/,"Imperial City Hue"],[/天姥寺/,"Thien Mu Pagoda Hue"],[/啟定皇陵/,"Khai Dinh Tomb"],[/海雲嶺/,"Hai Van Pass"],[/日出|美溪/,"My Khe Beach Da Nang"],[/Cô Tiên/,"Kiệt 80/10 Trần Phú, Hải Châu, Đà Nẵng"],[/靈應寺/,"Chùa Linh Ứng Bãi Bụt Sơn Trà"],[/Shamballa/,"277 Trần Hưng Đạo, An Hải Bắc, Đà Nẵng"],[/Trees Spa/,"301 Dương Đình Nghệ, An Hải Bắc, Đà Nẵng"],[/纜車|巴拿山/,"Ba Na Hills Cable Car Station"],[/Thìa Gỗ/,"53 Phan Thúc Duyện, Mỹ An, Đà Nẵng"],[/椰子林/,"Bay Mau Coconut Forest Hoi An"],[/古城/,"Hoi An Ancient Town"],[/Morning Glory/,"Morning Glory Signature Hoi An"],[/放水燈/,"Hoi An Hoai River"],[/五行山/,"81 Huyền Trân Công Chúa, Ngũ Hành Sơn, Đà Nẵng"],[/Sứ Retreat/,"Sứ Retreat Hoi An"],[/機場/,"Da Nang International Airport"],[/Canvas/,"Canvas Danang Beach"]];
+function ic(t){var k="leaf";for(var i=0;i<K.length;i++)if(K[i][0].test(t)){k=K[i][1];break}return'<svg class="ic" viewBox="0 0 48 48" aria-hidden="true">'+I[k]+"</svg>"}
+function mp(t){for(var i=0;i<M.length;i++)if(M[i][0].test(t))return'<a class="mp" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(M[i][1])+'">地圖</a>';return""}
+var cur=0;
+function showDay(i){
+  cur=i;var d=days[i];
+  [].forEach.call($("tabs").children,function(b,j){b.setAttribute("aria-selected",j===i)});
+  $("day").innerHTML="<h3>"+d.k+"　"+d.t+"</h3>"+(d.n?'<p class="note">'+d.n+"</p>":'<p class="note">'+d.d+"</p>")+'<ul class="tl">'+d.r.map(function(x){return"<li><time>"+x[0]+"</time><div>"+x[1]+((x[2]||mp(x[1]))?"<em>"+(x[2]||"")+mp(x[1])+"</em>":"")+"</div>"+ic(x[1])+"</li>"}).join("")+"</ul>";
+}
+$("tabs").innerHTML=days.map(function(d,i){return'<button role="tab" aria-selected="false">'+d.k+"<small>"+d.d+"</small></button>"}).join("");
+[].forEach.call($("tabs").children,function(b,i){b.onclick=function(){showDay(i)}});
+showDay(0);
+$("cars").innerHTML=cars.map(function(r){return'<tr><td class="n">'+r[0]+'</td><td class="n">'+r[1]+"</td><td>"+r[2]+"</td></tr>"}).join("");
+$("budget").innerHTML=budget.map(function(r,i){return"<tr"+(i===5?' class="total"':"")+'><td class="n">'+r[0]+'</td><td class="n">'+r[1]+"</td><td>"+r[2]+"</td></tr>"}).join("");
+
+var store={};
+try{store=JSON.parse(localStorage.getItem("dn-checks")||"{}")}catch(e){store={}}
+function save(){try{localStorage.setItem("dn-checks",JSON.stringify(store))}catch(e){}}
+function checklist(id,items,pre,prog,fmt){
+  $(id).innerHTML=items.map(function(x,i){var k=pre+i;return'<li><label><input type="checkbox" data-k="'+k+'"'+(store[k]?" checked":"")+"><span>"+fmt(x)+"</span></label></li>"}).join("");
+  function upd(){var c=items.filter(function(_,i){return store[pre+i]}).length;$(prog).textContent=({b:"已預約 ",a:"已確認 ",k:"已打包 "}[pre])+c+" / "+items.length}
+  upd();
+  $(id).onchange=function(e){store[e.target.getAttribute("data-k")]=e.target.checked;save();upd()};
+}
+checklist("booklist",book,"b","p1",function(x){return x[0]+"　"+x[1]+"<small>"+x[2]+"</small>"});
+checklist("asklist",ask,"a","p2",function(x){return"<b>"+x[0]+"</b>　"+x[1]});
+
+$("addrlist").innerHTML=addr.map(function(x,i){return"<li><div><b>"+x[0]+"</b><span>"+x[1]+'</span></div><button class="copy" data-i="'+i+'">複製</button></li>'}).join("");
+$("addrlist").onclick=function(e){
+  var b=e.target.closest(".copy");if(!b)return;
+  var t=addr[b.getAttribute("data-i")][1];
+  function ok(){b.textContent="已複製";setTimeout(function(){b.textContent="複製"},1500)}
+  try{navigator.clipboard.writeText(t).then(ok,fb)}catch(x){fb()}
+  function fb(){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");ok()}catch(x){}a.remove()}
+};
+$("tiplist").innerHTML=tips.map(function(x){return"<li><b>"+x[0]+"</b>"+x[1]+"</li>"}).join("");
+var pack=["護照（確認效期與入境規定）","越盾現金（五行山、古城、放水燈、躺椅）","信用卡、旅遊保險資料","網卡或 eSIM","薄外套（巴拿山山頂涼）","寺廟穿著：遮肩膀、遮膝蓋","泳衣、浴巾","止滑好走的鞋（五行山）","帽子、陽傘、防曬乳","水壺、濕紙巾","行動電源、充電線","萬用轉接頭","防蚊液、常備藥","素食備用乾糧（2 位吃素）","野餐墊（美溪海灘用）","防水袋（竹籃船、泳池）"];
+checklist("packlist",pack,"k","p3",function(x){return x});
+var go=new Date("2027-04-10T07:10:00+08:00"),en=new Date("2027-04-15T22:35:00+08:00"),nw=new Date();
+$("cd").innerHTML=nw<go?'還有<span class="big">'+Math.ceil((go-nw)/864e5)+"</span>天":nw<en?"旅途進行中，玩得開心":"旅程結束，歡迎回家";
+function tile(f){var s="",i;function fan(cx,cy,r,a,fl,n){var R=Math.PI/180,x1=cx+r*Math.cos(a*R),y1=cy-r*Math.sin(a*R),y2=cy+r*Math.sin(a*R),o='<path d="M'+cx+" "+cy+"L"+x1+" "+y1+"A"+r+" "+r+" 0 0 1 "+x1+" "+y2+'Z" fill="'+fl+'" stroke="#5b4a3a" stroke-width="1.2"/>';for(var j=1;j<n;j++){var t=(-a+2*a*j/n)*R;o+='<path d="M'+cx+" "+cy+"L"+(cx+r*Math.cos(t))+" "+(cy+r*Math.sin(t))+'" stroke="#b88a3e" stroke-width=".7" opacity=".6"/>'}return o}
+s+=fan(-20,120,110,62,"#e8c47c",14)+'<ellipse cx="52" cy="92" rx="15" ry="6" transform="rotate(-35 52 92)" fill="#6f9a95"/><ellipse cx="38" cy="140" rx="12" ry="5" transform="rotate(25 38 140)" fill="#6f9a95"/><ellipse cx="60" cy="126" rx="10" ry="4.5" fill="#b5473a"/>';
+s+=fan(-30,410,92,58,"#f1dfb6",12)+'<path d="M20 400Q40 380 62 392" stroke="#6f9a95" fill="none"/>';
+s+='<path d="M0 290Q45 276 92 258" stroke="#7a5f48" stroke-width="2" fill="none"/>';
+for(i=0;i<5;i++)s+='<ellipse cx="92" cy="246" rx="5" ry="12" transform="rotate('+i*72+' 92 258)" fill="#fbf7ee" stroke="#cbb89a" stroke-width=".8"/>';
+s+='<circle cx="92" cy="258" r="3" fill="#d9a84e"/>';
+for(i=0;i<4;i++)s+='<ellipse cx="30" cy="560" rx="22" ry="8" transform="rotate('+(-70+i*28)+' 10 600)" fill="'+(i%2?"#d89a5a":"#c98446")+'" opacity=".8"/>';
+return'<svg xmlns="http://www.w3.org/2000/svg" width="120" height="640" viewBox="0 0 120 640">'+(f?'<g transform="translate(120 0) scale(-1 1)">'+s+"</g>":s)+"</svg>"}
+[].forEach.call(document.querySelectorAll(".deco"),function(e,i){e.style.backgroundImage='url("data:image/svg+xml,'+encodeURIComponent(tile(i))+'")'});
+</script>
+</body>
+</html>
